@@ -23,6 +23,14 @@
 # f"Hello, {name}"
 # 'Hello, Nina'
 #
+# Could also use this way:
+# print("My name is", name)
+# >>> My name is Nina
+#
+# There is also percent formatting
+# print("Hello, %s" % name)
+# Hello, Nina
+#
 # You can't concatenate a string and an int, can only concat strings
 # You would need to convert the int to str or str to int
 #
