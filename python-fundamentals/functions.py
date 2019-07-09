@@ -1,5 +1,6 @@
 # Functions
 #
+# Format of creating a function
 # ex:
 # >>> def foo():
 # ...     print("Hello!")
@@ -138,4 +139,18 @@
 #
 # >>> foo(a=3, b=7)
 # 10
+#
+# It is recommended to not use mutable arguments as default arguments
+# such as a list because that value is instantiated only the FIRST TIME
+# the function is called and then that value is shared
+# ex:
+#
+# >>> def foo(a, b=[]):
+# ...     b.append(a)
+# ...     print("B is: ", b)
+# ...
+# >>> foo(5)
+# B is: [5]
+# >>> foo(6)
+# B is: [5, 6]
 #
