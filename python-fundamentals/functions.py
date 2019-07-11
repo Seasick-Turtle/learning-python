@@ -154,3 +154,64 @@
 # >>> foo(6)
 # B is: [5, 6]
 #
+# ###########################################
+#
+# Function Scope in Python
+#
+# Python scoping happens with whitespace
+# The block of indented code for the function changes into
+# the internal scope of that particular function
+#
+# The function scope has access to external variables but can't change them
+# ex:
+#
+# >>> def twitter_info():
+# ...     account = "nnja"
+# ...     print(f"Account inside the function is: {account}")
+# ...
+# >>> twitter_info()
+# Account inside the function is: nnja
+# >>> account
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# NameError: name 'account' is not defined
+#
+# >>> name = "Nina"
+# >>> def try_change_name():
+# ...     name = "Max"
+# ...     print(f"Name inside function: {name}")
+# >>> try_change_name()
+# Name inside function: Max
+# >>> f"Name outside of the function: {name}"
+# 'Name outside of the function: Nina
+#
+# Generally, in production you don't want a lot of variables floating around
+# outside of a defined scope, constants however are generally okay
+#
+# Don't do this:
+# source of bugs
+#
+# Do not use empty lists as arguments, default arguments get instantiated once
+# which is when the function is defined, primitives are safe to use
+# >>> def foo(a, b=[]):
+# ...     b.append(a)
+# ...     print(b)
+# ...
+# >>> foo(1)
+# [1]
+# >>> foo(5)
+# [1, 5]
+#
+# Do this instead
+#
+# >>> def foo(a, b=None):
+# ...     if b is None:
+# ...             b = []
+# ...     b.append(a)
+# ...     print(b)
+# ...
+# >>> foo(1)
+# [1]
+# >>> foo(5)
+# [5]
+#
