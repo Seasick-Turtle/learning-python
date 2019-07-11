@@ -4,9 +4,19 @@
 # ex:
 # >>> def foo():
 # ...     print("Hello!")
-# ...
+# ... (<-- hitting enter twice in the REPL to create this whitespace)
 # >>> foo()
 # Hello!
+#
+# Note: be sure to indent, otherwise you'll receive an indentation error
+# Also, x and y are known as positional arguments
+#
+# >>> def add_numbers(x, y):
+# ... return x + y
+#   File "<stdin>", line 2
+#     return x + y
+# IndentationError: expected an indented block
+#
 #
 # >>> def meaning_of_life():
 # ...     return 42
@@ -214,4 +224,23 @@
 # [1]
 # >>> foo(5)
 # [5]
+#
+# Keyword arguments are for setting default values, these are optional and must always come
+# after any positional arguments, example:
+#
+# >>> def calculate_numbers(x, y, operation="add"):
+# ...     if operation == "add":
+# ...         return x + y
+# ...     elif operation == "subtract";
+# ...          return x - y
+# ...
+#
+# If we don't pass a value to the keyword argument, we get the default of "add"
+# >>> calculate_numbers(2, 3)
+#
+# You can pass a keyword argument as a normal positional argument
+# >>> calculate_numbers(2, 3, "subtract")
+#
+# You can also use the argument's keyword, this helps with readbility
+# >>> calculate_numbers(2, 3, operation="subtract")
 #
