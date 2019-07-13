@@ -3,6 +3,9 @@
 # Lists are used for storing similar items and in cases where
 # items need to be added ro removed
 #
+# Lists can hold primitive types and more advanced data types
+# Items in a list don't have to be of the same data type
+#
 # Can be created with empty brackets [] or with a variable
 # >>> type([])
 # <class 'list'>
@@ -129,4 +132,78 @@
 # >>> names.extend(colors)
 # >>> names
 # ['Nina', 'Max', 'Red', 'Blue']
+#
+# ######################################
+#
+# Looking for an item in a list
+#
+# Looking for an item is a slow operation as it checks every value
+# There are multiple ways of doing so
+# Here is using the in keyword:
+#
+# >>> names = ['Nina', 'Max', 'Phillip', 'Nina']
+# >>> 'Rose' in names
+# False
+# >>> 'Nina' in names
+# True
+#
+# You can use the index method of a list to find the first result
+#
+# >>> names.index('Max')
+# 1
+# >>> names.index('Nina')
+# 0
+#
+# If you want to find out how many times an item
+# appears in a list, use the count method
+#
+# >>> names.count('Max')
+# 1
+# >>> names.count('Nina')
+# 2
+#
+# You can use .index with to assist with updating items
+# in a list
+#
+# >>> names[0] = 'Jimmy'
+# >>> names
+# ['Jimmy', 'Max', 'Phillip', 'Nina']
+# >>> pos = names.index('Phillip')
+# >>> names[pos] = 'Floyd'
+# >>> names
+# ['Jimmy', 'Max', 'Floyd', 'Nina]
+#
+# #################################################
+#
+# Removing items from a list
+#
+# There are several methods of doing so, just like insert
+# Using .remove removes the first item from the list:
+#
+# >>> names = ['Nina', 'Max']
+# >>> names.remove('Max')
+# >>> names
+# ['Nina']
+# >>> names = ['Nina', 'Max', 'Nina']
+# >>> names.remove('Nina')
+# >>> names
+# ['Max', 'Nina']
+#
+# You can use the pop method to remove an item at the end
+# of the list or use it with an index to remove an
+# item at particular position, it'll also return the
+# item that was just removed
+#
+# >>> names
+# ['Max', 'Nina']
+# >>> names.pop()
+# 'Nina' <-- item that was popped
+# >>> names
+# ['Max']
+#
+# >>> names = ['Nina', 'Rose', 'Max']
+# names.pop(1)
+# 'Rose'
+# >>> names
+# ['Nina', 'Max']
 #
