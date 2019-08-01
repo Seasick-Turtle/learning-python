@@ -6,6 +6,9 @@
 # Lists can hold primitive types and more advanced data types
 # Items in a list don't have to be of the same data type
 #
+# *********************************************************************************
+#
+#
 # Can be created with empty brackets [] or with a variable
 # >>> type([])
 # <class 'list'>
@@ -17,6 +20,8 @@
 # ['Nina', 'Max', 'Rose']
 # >>> print(names)
 # ['Nina', 'Max', 'Rose']
+#
+# *********************************************************************************
 #
 # You can use the len built in method to find the length
 # of the list (this is a globally available method)
@@ -38,6 +43,9 @@
 # >>> my_list[2]
 # c
 #
+# *********************************************************************************
+#
+#
 # To update a partiular item:
 # >>> names
 # ['Nina', 'Max', 'Rose']
@@ -53,6 +61,9 @@
 # ... ]
 # >>> names
 # ['Nina', 'Jimmy', 'Rose']
+#
+# *********************************************************************************
+#
 #
 # You can sort two ways in Python
 # The first being with the sorted method, ex:
@@ -75,6 +86,9 @@
 # >>> x = sorted(lottery_numbers)
 # >>> x
 # [1, 4, 11, 78, 34242]
+#
+# *********************************************************************************
+#
 #
 # The second way of sorting lists in Python which changes
 # the list itself by using the sort method
@@ -101,7 +115,7 @@
 #   Reverse *IN PLACE*
 # (END)
 #
-# ###########################################
+# *********************************************************************************
 #
 # Adding items to a list
 #
@@ -114,6 +128,8 @@
 # ['Nina', 'Max', 'Jimmy']
 # >>> len(names)
 # 3
+#
+# *********************************************************************************
 #
 # We can also use the insert method to put an item
 # in a specific position
@@ -133,7 +149,7 @@
 # >>> names
 # ['Nina', 'Max', 'Red', 'Blue']
 #
-# ######################################
+# *********************************************************************************
 #
 # Looking for an item in a list
 #
@@ -154,6 +170,8 @@
 # >>> names.index('Nina')
 # 0
 #
+# *********************************************************************************
+#
 # If you want to find out how many times an item
 # appears in a list, use the count method
 #
@@ -173,7 +191,7 @@
 # >>> names
 # ['Jimmy', 'Max', 'Floyd', 'Nina]
 #
-# #################################################
+# *********************************************************************************
 #
 # Removing items from a list
 #
@@ -188,6 +206,9 @@
 # >>> names.remove('Nina')
 # >>> names
 # ['Max', 'Nina']
+#
+#
+# *********************************************************************************
 #
 # You can use the pop method to remove an item at the end
 # of the list or use it with an index to remove an

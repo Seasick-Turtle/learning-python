@@ -8,8 +8,10 @@
 # >>> foo()
 # Hello!
 #
+# *********************************************************************************
 # Note: be sure to indent, otherwise you'll receive an indentation error
 # Also, x and y are known as positional arguments
+# *********************************************************************************
 #
 # >>> def add_numbers(x, y):
 # ... return x + y
@@ -74,7 +76,7 @@
 # <class 'NoneType'>
 #
 #
-# ###############################################
+# *********************************************************************************
 #
 # Function Arguments
 #
@@ -99,8 +101,10 @@
 # >>> say_greeting("Hello, "Nina")
 # Hello, Nina
 #
+# *********************************************************************************
 # Note: If you declare a function with the same name in the REPL
 # it will just overwrite the previous one
+# *********************************************************************************
 #
 # Function with default arguments:
 # Note: Default arguments always go last
@@ -125,7 +129,8 @@
 #   File "<stdin>", line 1
 # SyntaxError: non-default argument follows default argument (wrong order)
 #
-# You can ;
+#
+#
 # >>> def create_query(language="Javascript", num_stars=50, sort="desc"):
 # ...     return f"language: {language}, {num_stars} {sort}"
 # ...
@@ -145,7 +150,9 @@
 # >>> foo(3, b=6)
 # 9
 #
+# *********************************************************************************
 # If you want to be explicit, you can pass in a value to the argument a
+# *********************************************************************************
 #
 # >>> foo(a=3, b=7)
 # 10
@@ -164,7 +171,7 @@
 # >>> foo(6)
 # B is: [5, 6]
 #
-# ###########################################
+# *********************************************************************************
 #
 # Function Scope in Python
 #
@@ -194,6 +201,8 @@
 # Name inside function: Max
 # >>> f"Name outside of the function: {name}"
 # 'Name outside of the function: Nina
+#
+# *********************************************************************************
 #
 # Generally, in production you don't want a lot of variables floating around
 # outside of a defined scope, constants however are generally okay

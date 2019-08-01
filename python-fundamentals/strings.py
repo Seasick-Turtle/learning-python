@@ -1,7 +1,9 @@
 # Can be enclosed with either single or double quotes
 #
+# *********************************************************************************
 # Best practice - use double quotes
 # Avoids having to escape the apostrophe
+# *********************************************************************************
 #
 # Can concatenate strings with +
 #
@@ -16,6 +18,8 @@
 # '\n12345\nabc\n'
 # >>>
 #
+# *********************************************************************************
+#
 # f-string was introduced in Python 3, new formatting for strings (string interpolation)
 #
 # ex:
@@ -27,10 +31,14 @@
 # print("My name is", name)
 # >>> My name is Nina
 #
+# *********************************************************************************
+#
 # There is also percent formatting
 # print("Hello, %s" % name)
 # Hello, Nina
 #
+# *********************************************************************************
 # You can't concatenate a string and an int, can only concat strings
 # You would need to convert the int to str or str to int
+# *********************************************************************************
 #
